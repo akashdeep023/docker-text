@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./style.css" type="text/css" />
+		<title>Home Page</title>
+	</head>
+	<body>
+		<h1>Hi student, Welcome to JACK University!</h1>
+		<p>
+			You can sign up to the platform to access all important notes &
+			lectures.
+		</p>
+
+		<form action="/addUser" method="POST" target="_blank" id="signupForm">
+			<div class="field">
+				<label for="email">Email: </label>
+				<input type="text" placeholder="jack@email.com" name="email" />
+			</div>
+			<div class="field">
+				<label for="username">Username: </label>
+				<input type="text" placeholder="Jack Ji" name="username" />
+			</div>
+			<div class="field">
+				<label for="password">Password: </label>
+				<input type="password" placeholder="Password" name="password" />
+			</div>
+
+			<button id="formBtn">Create Account</button>
+		</form>
+	</body>
+</html>
