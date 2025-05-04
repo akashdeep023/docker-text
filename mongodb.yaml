@@ -11,6 +11,8 @@ services:
             - MONGO_INITDB_ROOT_USERNAME=${MONGO_USERNAME} # MONGO_INITDB_ROOT_USERNAME: username
             - MONGO_INITDB_ROOT_PASSWORD=${MONGO_PASSWORD}
             - MONGO_INITDB_DATABASE=${MONGO_DB}
+        volumes:
+            - /c/Users/AKASH_DEEP/Desktop/data:/data/db # persist data in a named volume (host_directory:/container_directory) (mongodb data path = /data/db)
 
     mongo-express:
         image: mongo-express
